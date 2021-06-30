@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingTop="3dp">
+
+    <TextView
+        android:id="@+id/tv_timestamp"
+        style="@style/chat_text_date_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+
+        <ImageView
+            android:id="@+id/sdv_avatar_s"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_chat_activity"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon2"
+            android:visibility="visible" />
+
+        <com.cxd.chatview.moudle.ChatView xmlns:chat="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cv_chat_content_s"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@id/sdv_avatar_s"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="35dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="10dp"
+            chat:arrow_direction="right"
+            chat:arrow_height="12dp"
+            chat:arrow_up_distance="15dp"
+            chat:arrow_width="5dp"
+            chat:conner_radius="6dp"
+            chat:fill_color="#45c01a"
+            chat:is_arrow_center="false"
+            chat:press_fill_color="@color/btn_green_pressed"
+            chat:press_stroke_color="@color/btn_green_pressed"
+            chat:stroke_color="#45c01a"
+            chat:stroke_width="1px">
+
+            <TextView
+                android:id="@+id/right_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxWidth="216dp"
+                android:textColor="#FFFFFF"
+                android:textSize="16dp" />
+        </com.cxd.chatview.moudle.ChatView>
+
+        <ProgressBar
+            android:id="@+id/pb_sending"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/cv_chat_content_s"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_msg_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/cv_chat_content_s"
+            android:clickable="true"
+            android:src="@drawable/msg_state_failed_resend"
+            android:visibility="gone" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/left_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_chat_activity">
+
+        <ImageView
+            android:id="@+id/sdv_avatar_r"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/margin_chat_activity"
+            android:scaleType="fitXY"
+            android:src="@mipmap/icon5"
+            android:visibility="visible" />
+
+        <com.cxd.chatview.moudle.ChatView xmlns:chat="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/cv_chat_content_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="45dp"
+            android:layout_toRightOf="@id/sdv_avatar_r"
+            android:clickable="true"
+            android:focusable="true"
+            android:minHeight="35dp"
+            android:paddingLeft="15dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="10dp"
+            chat:arrow_direction="left"
+            chat:arrow_height="12dp"
+            chat:arrow_up_distance="15dp"
+            chat:arrow_width="5dp"
+            chat:conner_radius="6dp"
+            chat:fill_color="#FFFFFF"
+            chat:is_arrow_center="false"
+            chat:stroke_color="#FFFFFF"
+            chat:stroke_width="1dp">
+
+            <TextView
+                android:id="@+id/left_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:maxWidth="216dp"
+                android:text=""
+                android:textColor="#4a4a4a"
+                android:textSize="16dp" />
+        </com.cxd.chatview.moudle.ChatView>
+    </RelativeLayout>
+
+</LinearLayout>
