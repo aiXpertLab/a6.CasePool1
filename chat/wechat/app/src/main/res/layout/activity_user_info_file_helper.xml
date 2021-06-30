@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ll_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_bar_height"
+        android:background="@color/common_top_bar_white">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="@dimen/top_back_width"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="back"
+            android:scaleType="centerInside"
+            android:src="@drawable/btn_top_back" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:background="@color/color_white">
+
+            <com.facebook.drawee.view.SimpleDraweeView
+                android:id="@+id/sdv_avatar"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                fresco:placeholderImage="@mipmap/icon_user_avatar_filehelper" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/sdv_avatar"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="2dp"
+                    android:text="文件传输助手"
+                    android:textColor="#353535"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tv_wx_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="3dp"
+                    android:text="微信号：filehelper"
+                    android:textColor="#979797"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_intro"
+            android:layout_width="match_parent"
+            android:layout_height="88dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/color_white"
+            android:paddingLeft="12dp"
+            android:paddingRight="20dp">
+
+            <TextView
+                android:id="@+id/tv_intro"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="5dp"
+                android:text="@string/intro"
+                android:textColor="#353535"
+                android:textSize="@dimen/common_item_text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_intro"
+                android:text="@string/file_transfer_intro"
+                android:textColor="@color/tips_grey"
+                android:textSize="@dimen/common_item_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DBDBDB" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_send_message"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:layout_marginTop="10dp"
+            android:background="#ffffff"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp">
+
+            <ImageView
+                android:id="@+id/iv_send_message"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/tv_send_message"
+                android:src="@mipmap/icon_send_msg" />
+
+            <TextView
+                android:id="@+id/tv_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:paddingLeft="8dp"
+                android:text="@string/send_message"
+                android:textColor="#5B6784"
+                android:textSize="@dimen/common_item_text_size" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignParentBottom="true"
+                android:background="#DBDBDB" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

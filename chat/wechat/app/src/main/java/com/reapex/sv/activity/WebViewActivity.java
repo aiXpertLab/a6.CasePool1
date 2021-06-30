@@ -1,0 +1,45 @@
+package com.reapex.sv.activity;
+
+import android.app.Activity;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.webkit.WebChromeClient;
+import android.webkit.WebView;
+import android.webkit.WebViewClient;
+
+import com.reapex.sv.R;
+
+import androidx.annotation.Nullable;
+
+public class WebViewActivity extends Activity {
+    private WebView mContentWv;
+    public static final String RESULT = "result_data";
+
+    @Override
+    protected void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_webview);
+        initViews();
+    }
+
+    private void initViews() {
+        mContentWv = findViewById(R.id.wv_content);
+
+        mContentWv.setWebChromeClient(new WebChromeClient());
+        mContentWv.setWebViewClient(new WebViewClient() {
+            @Override
+            public boolean shouldOverrideUrlLoading(WebView view, String url) {
+                return false;
+            }
+        });
+
+        Intent intent = getIntent();
+        String url = intent.getStringExtra(RESULT);
+        mContentWv.loadUrl(url);
+    }
+
+    public void back(View view) {
+        finish();
+    }
+}
