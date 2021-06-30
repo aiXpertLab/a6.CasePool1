@@ -1,0 +1,5 @@
+com/hypech/case6dictionary/BuildConfig.java
+ com.hypech.case6dictionary.BuildConfig
+com/hypech/case6dictionary/Dictionary.java
+ com.hypech.case6dictionary.Dictionary
+ com.hypech.case6dictionary.Dictionary$DictionaryAdapter

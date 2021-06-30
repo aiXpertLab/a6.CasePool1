@@ -1,0 +1,17 @@
+com.case8dictionary.dict:string/hello = 0x7f060001
+com.case8dictionary.dict:string/searchWord = 0x7f060003
+com.case8dictionary.dict:raw/dictionary = 0x7f050000
+com.case8dictionary.dict:layout/word_list_item = 0x7f040001
+com.case8dictionary.dict:id/word = 0x7f030005
+com.case8dictionary.dict:id/search = 0x7f030001
+com.case8dictionary.dict:id/searchWord = 0x7f030002
+com.case8dictionary.dict:id/tvWordItem = 0x7f030004
+com.case8dictionary.dict:color/blue = 0x7f010000
+com.case8dictionary.dict:id/textView1 = 0x7f030003
+com.case8dictionary.dict:string/app_name = 0x7f060000
+com.case8dictionary.dict:id/result = 0x7f030000
+com.case8dictionary.dict:color/white = 0x7f010002
+com.case8dictionary.dict:color/gray = 0x7f010001
+com.case8dictionary.dict:string/searchLabel = 0x7f060002
+com.case8dictionary.dict:drawable/ic_launcher = 0x7f020000
+com.case8dictionary.dict:layout/main = 0x7f040000

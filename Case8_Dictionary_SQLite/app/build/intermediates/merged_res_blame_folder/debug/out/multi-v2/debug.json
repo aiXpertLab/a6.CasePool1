@@ -1,0 +1,43 @@
+{
+    "logs": [
+        {
+            "outputFile": "A:\\HYPech\\Case8_Dictionary_SQLite\\app\\build\\intermediates\\res\\merged\\debug\\values_values.arsc.flat",
+            "map": [
+                {
+                    "source": "A:\\HYPech\\Case8_Dictionary_SQLite\\app\\src\\main\\res\\values\\strings.xml",
+                    "from": {
+                        "startLines": "3,2,5,4",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "102,55,203,157",
+                        "endColumns": "54,46,48,45",
+                        "endOffsets": "152,97,247,198"
+                    },
+                    "to": {
+                        "startLines": "5,6,7,8",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "173,228,275,324",
+                        "endColumns": "54,46,48,45",
+                        "endOffsets": "223,270,319,365"
+                    }
+                },
+                {
+                    "source": "A:\\HYPech\\Case8_Dictionary_SQLite\\app\\src\\main\\res\\values\\color.xml",
+                    "from": {
+                        "startLines": "3,4,2",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "96,135,56",
+                        "endColumns": "38,38,39",
+                        "endOffsets": "130,169,91"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,94,133",
+                        "endColumns": "38,38,39",
+                        "endOffsets": "89,128,168"
+                    }
+                }
+            ]
+        }
+    ]
+}

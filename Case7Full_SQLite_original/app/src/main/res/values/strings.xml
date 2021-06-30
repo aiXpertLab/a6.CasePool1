@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Case7Full_SQLite</string>
+    <string name="logint">Login</string>
+    <string name="etUser_hint">Phone/Email</string>
+    <string name="pswHint">Password</string>
+    <string name="rempsw">Remember Password</string>
+    <string name="logintxt">Login</string>
+    <string name="yhzc">Register</string>
+    <string name="plsu">User Name</string>
+    <string name="plsemail">Email</string>
+    <string name="plsohone">Phone</string>
+    <string name="plspsw">Password</string>
+    <string name="reg">Register</string>
+</resources>
